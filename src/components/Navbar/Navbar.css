@@ -1,0 +1,31 @@
+.nav-header {
+    background-color: #383961;
+    height:50px;
+    color:white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 2px 2px #383961;
+}
+
+.nav-title {
+    padding:5px;
+    margin-left:5px;
+    letter-spacing:0.5px;
+    font-size: 35px;
+}
+
+.nav-login {
+    padding:5px;
+    margin-right: 15px;
+    background-color:#f2f2f8;
+    font-size:14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri;
+    color:#383961;
+    border-radius: 3px;
+    font-weight: 400;
+}
+
