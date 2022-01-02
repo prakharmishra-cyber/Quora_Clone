@@ -25,7 +25,7 @@ const AllPosts = () => {
             .catch(function (error) {
                 console.log("Error getting documents: ", error);
             });        
-    }, []);
+    }, [db,]);
 
 
   

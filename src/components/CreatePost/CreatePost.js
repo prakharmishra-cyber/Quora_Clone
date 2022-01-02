@@ -25,20 +25,20 @@ const CreatePost = () => {
                 console.log("Error getting documents: ", error);
             });
 
-    }, []);
+    }, [db,]);
 
     const handlePost = () => {
-        alert('button clicked');
+        //alert('button clicked');
         db.collection('posts').doc(curr_question).collection('answers').add({
             postData: content,
             author: String(firebase.auth().currentUser.multiFactor.user.displayName).toUpperCase(),
             date: new Date()
         }).then(() => {
-            console.log('Post Added Successfully');
+            //console.log('Post Added Successfully');
             setContent('');
             alert('Post Added Successfully');
         }).catch((error) => {
-            console.log('Some error occured');
+            //console.log('Some error occured');
         })
 
     }
@@ -49,7 +49,7 @@ const CreatePost = () => {
 
     const handleQChange = (e) => {
         e.preventDefault();
-        console.log(e.target.value);
+        //console.log(e.target.value);
         setCurr_Question(e.target.value);
     }
 

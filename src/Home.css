@@ -1,0 +1,8 @@
+.outer_home {
+    margin:20px;
+    border:1px solid rgb(222, 215, 215);
+    box-shadow: 2px 2px 3px gainsboro;
+    border-radius:5px;
+    padding:20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

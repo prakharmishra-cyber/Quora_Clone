@@ -38,7 +38,7 @@ const Reader = () => {
                 console.log("Error getting documents: ", error);
             });
 
-    }, []);
+    }, [db,id]);
 
 
     return (

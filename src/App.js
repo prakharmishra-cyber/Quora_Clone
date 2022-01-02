@@ -11,6 +11,7 @@ import CreatePost from './components/CreatePost/CreatePost';
 import QuestionPoster from './components/QuestionPoster/QuestionPoster';
 import AllPosts from './components/AllPosts/AllPosts';
 import Reader from './components/AllPosts/Reader';
+import Home from './Home';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
         <FirestoreProvider firebase={firebase} {...firebaseConfig}>
           <Navbar />
           <Routes>
+              <Route path="/" element={<Home/>}/>
               <Route path="/read_answers" element={<AllPosts />} />
               <Route path="/post_question" element={<QuestionPoster/>}/>
               <Route path="/answer_question" element={<CreatePost />} />
