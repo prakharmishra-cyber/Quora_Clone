@@ -10,7 +10,7 @@ import { Route, Routes } from 'react-router-dom';
 import CreatePost from './components/CreatePost/CreatePost';
 import QuestionPoster from './components/QuestionPoster/QuestionPoster';
 import AllPosts from './components/AllPosts/AllPosts';
-import { IfFirebaseAuthed } from '@react-firebase/auth';
+import Reader from './components/AllPosts/Reader';
 
 
 function App() {
@@ -23,6 +23,7 @@ function App() {
               <Route path="/read_answers" element={<AllPosts />} />
               <Route path="/post_question" element={<QuestionPoster/>}/>
               <Route path="/answer_question" element={<CreatePost />} />
+              <Route path="/read_answer/:id" element={<Reader/>}/>
           </Routes>
         </FirestoreProvider>
       </FirebaseAuthProvider>

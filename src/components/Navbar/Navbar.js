@@ -16,22 +16,24 @@ const Navbar = () => {
         firebase.auth()
             .signInWithPopup(provider)
             .then((result) => {
-                var user = result.user;
-                console.log(user);
+                //var user = result.user;
+                //console.log(user);
                 history('/read_answers');
             }).catch((error) => {
-                var errorCode = error.code;
-                var errorMessage = error.message;
-                var email = error.email;
-                var credential = error.credential;
-                console.log(errorCode, errorMessage, email, credential);
+                //var errorCode = error.code;
+                //var errorMessage = error.message;
+                //var email = error.email;
+                //var credential = error.credential;
+                //console.log(errorCode, errorMessage, email, credential);
+                console.log(error.message);
             });
     }
 
     const handleSignOut = ( e ) => {
         e.preventDefault();
         firebase.auth().signOut().then(() => {
-            console.log('Sign Out Successful');
+            //console.log('Sign Out Successful');
+            history('/');
         }).catch((error) => {
             console.log(error.message);
         })
@@ -41,7 +43,7 @@ const Navbar = () => {
     return (
         <div className="nav-header">
             <div className="nav-title">Quora</div>
-            <div>
+            <div className="nav_response">
                 <IfFirebaseUnAuthed>
                     <button onClick={googleSignInPopup} className="nav-login">Login</button>
                 </IfFirebaseUnAuthed>

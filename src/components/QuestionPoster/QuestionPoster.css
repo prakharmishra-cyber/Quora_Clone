@@ -30,3 +30,14 @@
     border-radius:7px;
     box-shadow:2px 2px 3px gainsboro;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .outer_box {
+        flex-direction: column;
+    }
+
+    .outer_box>div>button {
+        margin-top:20px;
+    }
+  }

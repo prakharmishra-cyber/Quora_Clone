@@ -14,7 +14,7 @@
     color:white;
     font-weight: 600;
     border-radius:4px;
-    box-shadow:2px 2px 3px gainsboro
+    box-shadow:2px 2px 3px gainsboro;
 }
 
 .c > label {
@@ -40,3 +40,11 @@ select {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-size:20px;
 }
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .dropdown {
+      display:flex;
+      flex-direction:column
+    }
+  }

@@ -55,7 +55,6 @@ const CreatePost = () => {
 
     return (
         <div className="b">
-
             <div className="c dropdown">
                 <label htmlFor="Question">Select a Question</label>
                 <select name="Question" onChange={handleQChange} >
